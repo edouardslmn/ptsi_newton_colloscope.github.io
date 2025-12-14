@@ -6,12 +6,6 @@
     <title>Colloscope PTSI 2025-2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* Icônes de matières (emoji / drapeaux) */
-.csi {
-    font-size: 1.25rem;
-    line-height: 1;
-}
-
 /* Couleur de fond Anglais */
 .cc.an .csi {
     background: rgba(236,72,153,.15);
@@ -78,7 +72,17 @@
         .cc:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.15)}
         .cc.ma{--ca:#3b82f6}.cc.ph{--ca:#10b981}.cc.si{--ca:#f59e0b}.cc.an{--ca:#ec4899}.cc.fr{--ca:#8b5cf6}
         .cs{font-family:Outfit;font-size:1.05rem;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px}
-        .csi{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+        .csi{
+  width:32px;
+  height:32px;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.25rem;   /* ✅ drapeau lisible */
+  line-height:1;       /* ✅ bien centré */
+}
+
         .cc.ma .csi{background:rgba(59,130,246,.15)}.cc.ph .csi{background:rgba(16,185,129,.15)}.cc.si .csi{background:rgba(245,158,11,.15)}.cc.an .csi{background:rgba(236,72,153,.15)}.cc.fr .csi{background:rgba(139,92,246,.15)}
         .cd{display:flex;flex-direction:column;gap:10px}
         .cdi{display:flex;align-items:center;gap:10px;color:var(--txt2);font-size:.9rem}
